@@ -1,24 +1,81 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from 'styled-components';
+import Projetos from './Components/Projetos/Projetos';
+import Portfolio from './Components/Portfolio/Portfolio';
+import Social from './Components/Social/Social';
+
+const mockup = [
+  {
+    projetos: 'WeatherApp',
+    link: 'https://github.com/PedroLucasLopes/weatherApp',
+  },
+  {
+    projetos: 'TEAcolhemos',
+    link: 'https://github.com/PedroLucasLopes/TEAcolhemos-Landing-Page',
+  },
+  {
+    projetos: 'Health Track',
+    link: 'https://github.com/PedroLucasLopes/Health-Track',
+  },
+  {
+    projetos: 'Begginer Projects',
+    link: 'https://github.com/PedroLucasLopes/Front-End-Projects-for-Begginers',
+  },
+  {
+    projetos: 'Consumin APIs',
+    link: 'https://github.com/PedroLucasLopes/Consumin-APIs',
+  },
+  {
+    projetos: 'PetShop',
+    link: '',
+  },
+  {
+    projetos: 'Quiz Game',
+    link: 'https://jovemouidoso.netlify.app/',
+  },
+  {
+    projetos: 'Utilities',
+    link: '',
+  },
+]
+
+const Header = styled.header`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+`
+
+const Aside = styled.aside`
+
+`
+
+const Global = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95vw;
+`
+
+const Footer = styled.footer`
+
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Global>
+      <Header>
+        {mockup.map(({ projetos, link, font }, i) => {
+          return <Projetos project={projetos} link={link} font={font} key={i} />
+        })}
+      </Header>
+      <Aside>
+        <Social />
+      </Aside>
+      <Footer>
+        <Portfolio />
+      </Footer>
+    </Global>
   );
 }
 
