@@ -22,6 +22,11 @@ const Box = styled.div`
     right: 30px;
     top: 35%;
     animation: ${side} .4s ease-out;
+
+    @media screen and (max-width: 768px) {
+    opacity: 0;
+    left: 999999px;
+  }
 `
 
 const Link = styled.a`
@@ -35,6 +40,10 @@ const Img = styled.img`
     &:hover {
         width: 2.5rem;
     }
+
+    @media screen and (max-width: 768px) {
+    margin-right: 12px;
+  }
 `
 
 const Social = () => {

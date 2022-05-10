@@ -26,10 +26,14 @@ const Box = styled.div`
     &:nth-child(even) {
         font-family: 'Ms Madi', cursive;
     }
+
+    @media screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Title = styled.p`
-    font-family: ${(font) => font};
     font-size: 3rem;
     margin-right: .8rem;
     font-weight: bold;
@@ -38,6 +42,13 @@ const Title = styled.p`
     &:hover {
         font-size: 4rem;
     }
+
+    @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
+    display: flex;
+    word-wrap: break-word;
+    line-height: 1;
+  }
 `;
 
 const Link = styled.a`
@@ -48,6 +59,10 @@ const Link = styled.a`
 const And = styled.p`
     font-size: 1.5rem;
     font-family: 'Ms Madi', cursive;
+
+    @media screen and (max-width: 768px) {
+    opacity: 0;
+  }
 `
 
 const Portfolio = ({ project, link, font }) => {

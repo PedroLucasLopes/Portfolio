@@ -18,6 +18,11 @@ const Box = styled.div`
     line-height: 0;
     margin-top: 3rem;
     animation: ${upper} .8s ease-out;
+
+    @media screen and (max-width: 768px) {
+        line-height: .6;
+        text-align: center;
+  }
 `
 
 const Title = styled.p`
@@ -29,6 +34,11 @@ const Title = styled.p`
     line-height: normal;
     text-align: center;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-top: -20px;
+  }
 `
 
 const Subtitle = styled.p`
@@ -38,6 +48,13 @@ const Subtitle = styled.p`
     margin-top: -16%;
     font-size: 2.3rem;
     font-family: 'Ms Madi', cursive;
+
+    @media screen and (max-width: 768px) {
+    font-size: 1.3rem;
+    margin-top: -20px;
+    margin-right: 0;
+    text-align: center;
+  }
 `
 
 const Link = styled.a`
@@ -50,6 +67,13 @@ const Link = styled.a`
         font-size: 3rem;
         font-weight: bold;
     }
+
+    @media screen and (max-width: 768px) {
+        &:hover {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+  }
 `
 
 const Portfolio = () => {

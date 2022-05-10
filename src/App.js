@@ -15,7 +15,7 @@ const mockup = [
   },
   {
     projetos: 'Health Track',
-    link: 'https://github.com/PedroLucasLopes/Health-Track',
+    link: 'https://health-track-app.vercel.app/',
   },
   {
     projetos: 'Begginer Projects',
@@ -44,6 +44,12 @@ const Header = styled.header`
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const Aside = styled.aside`
@@ -55,6 +61,12 @@ const Global = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 95vw;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const Footer = styled.footer`
