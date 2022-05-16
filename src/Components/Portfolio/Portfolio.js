@@ -18,6 +18,7 @@ const Box = styled.div`
     line-height: 0;
     margin-top: 3rem;
     animation: ${upper} .8s ease-out;
+    width: 100%;
 
     @media screen and (max-width: 768px) {
         line-height: .6;
