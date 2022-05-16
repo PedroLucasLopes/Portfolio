@@ -69,7 +69,7 @@ const Portfolio = ({ project, link, font }) => {
     return (
         <Box>
             <Title font={font}>
-                <Link href={link} target='_blank' rel='noreferrer noopener'>
+                <Link href={link}>
                     {project}
                 </Link>
             </Title>

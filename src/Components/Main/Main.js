@@ -22,7 +22,7 @@ const mockup = [
         link: 'https://ifood-receitas.surge.sh/index-market.html',
     },
     {
-        projetos: 'Begginer Projects',
+        projetos: 'Mini-Projects',
         link: 'https://github.com/PedroLucasLopes/Front-End-Projects-for-Begginers',
     },
     {
@@ -39,7 +39,7 @@ const mockup = [
     },
     {
         projetos: 'Utilities',
-        link: '',
+        link: 'utilities',
     },
 ]
 

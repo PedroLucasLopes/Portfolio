@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Main from './Components/Main/Main';
 import NotFound from './Components/NotFound/NotFound';
+import Utilities from './Components/Utilities/Utilities';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='utilities' element={<Utilities />} />
       </Routes>
     </BrowserRouter>
   );
