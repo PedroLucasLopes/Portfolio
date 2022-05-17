@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Navigation } from "swiper";
 import * as S from "./styles";
+
+console.log(window.screen.width)
 const Slider = ({ technologies }) => {
   return (
     <S.Wrapper>
@@ -10,7 +12,7 @@ const Slider = ({ technologies }) => {
         tag="div"
         wrapperTag="ul"
         spaceBetween={160}
-        slidesPerView={6}
+        slidesPerView={window.screen.width <= 768 ? 3 : 6}
         centeredSlides={true}
         loop={true}
         loopFillGroupWithBlank={true}
