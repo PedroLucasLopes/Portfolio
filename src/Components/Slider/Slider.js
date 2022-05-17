@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper";
+import 'swiper/css';
 
 const Slider = ({ technologies }) => {
     return (
@@ -8,7 +9,7 @@ const Slider = ({ technologies }) => {
             tag='section'
             wrapperTag='ul'
             spaceBetween={30}
-            slidesPerView={3}
+            slidesPerView={8}
             centeredSlides={true}
             autoplay={{
                 delay: 2500,
