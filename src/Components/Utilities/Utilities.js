@@ -39,6 +39,8 @@ const Utilities = () => {
         <S.Subtitle>Front-end</S.Subtitle>
         <Titulo frase="Quais tecnologias eu estudo?" />
         <Slider technologies={learning} />
+        <Titulo frase="Quais eu tenho interesse em estudar futuramente?" />
+        <Slider technologies={learn} />
       </S.BoxIntern>
     </S.Box>
   );

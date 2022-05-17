@@ -9,9 +9,11 @@ const Slider = ({ technologies }) => {
       <Swiper
         tag="div"
         wrapperTag="ul"
-        spaceBetween={5}
-        slidesPerView={4}
+        spaceBetween={160}
+        slidesPerView={6}
         centeredSlides={true}
+        loop={true}
+        loopFillGroupWithBlank={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
