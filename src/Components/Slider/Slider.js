@@ -11,14 +11,14 @@ const Slider = ({ technologies }) => {
       <Swiper
         tag="div"
         wrapperTag="ul"
-        spaceBetween={160}
-        slidesPerView={window.screen.width <= 768 ? 3 : 6}
+        spaceBetween={150}
+        slidesPerView={6}
         centeredSlides={true}
         loop={true}
         loopFillGroupWithBlank={true}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: false
         }}
         navigation={true}
         modules={[Autoplay, Navigation]}
@@ -31,7 +31,7 @@ const Slider = ({ technologies }) => {
           );
         })}
       </Swiper>
-    </S.Wrapper>
+    </S.Wrapper >
   );
 };
 

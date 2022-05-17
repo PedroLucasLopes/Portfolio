@@ -8,14 +8,16 @@ export const Wrapper = styled.section`
   @media screen and (max-width: 768px) {
     width: 90vw;
   }
+
   & ul {
     margin: 0 10rem;
 
-    @media screen and (max-width: 768px) {
-      margin: 0 6rem;
-  }
     & li {
       list-style: none;
+
+      @media screen and (max-width: 768px) {
+        margin: 0 -15rem;
+      }
     }
   }
 `;
