@@ -38,9 +38,25 @@ const Title = styled.p`
     margin-right: .8rem;
     font-weight: bold;
     transition: all .2s;
+    position: relative;
 
-    &:hover {
-        font-size: 4rem;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -36px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #323232;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
     }
 
     @media screen and (max-width: 768px) {
@@ -48,6 +64,10 @@ const Title = styled.p`
     display: flex;
     word-wrap: break-word;
     line-height: 1;
+
+    &:hover {
+        font-size: 2.5rem;
+    }
   }
 `;
 

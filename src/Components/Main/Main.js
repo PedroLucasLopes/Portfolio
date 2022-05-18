@@ -30,7 +30,7 @@ const mockup = [
         link: 'https://github.com/PedroLucasLopes/Consumin-APIs',
     },
     {
-        projetos: 'PetShop',
+        projetos: 'Dogs',
         link: '',
     },
     {

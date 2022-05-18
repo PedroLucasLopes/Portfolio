@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const side = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  } to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const Box = styled.div`
   margin: 0 6rem;
@@ -8,6 +18,7 @@ export const BoxTitle = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
+  animation: ${side} .8s ease-out;
 
   @media screen and (max-width: 768px) {
     margin-left: -3rem;
@@ -16,6 +27,7 @@ export const BoxTitle = styled.div`
 
 export const BoxIntern = styled.div`
   margin-left: 4rem;
+  animation: ${side} .4s ease-out;
 
   @media screen and (max-width: 768px) {
     margin-left: -4rem;
